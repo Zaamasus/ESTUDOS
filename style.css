@@ -23,6 +23,13 @@ a {
 --gren-color01:#3BD962;
 --gren-color02:#36BF58;
 --gren-color03:#A7F294;
+
+  /* fonts */
+  --title-font-size: 1rem;
+  --subtitle-font-size: .5rem;
+
+  --title-font: 'Poppins', sans-serif;
+  --body-font: 'DM Sans', sans-serif;
 }
 
 /*===  BASE ============================ */
@@ -39,9 +46,23 @@ body {
 
 .title {
   font: 700 var(--title-font-size) var(--title-font);
-  color: var(--gren-color01);
+  color: var(--title-color);
   -webkit-font-smoothing: auto;
 }
+
+.sub-title{
+  font: 700 var(--title-font-size) var(--title-font);
+  color: var(--title-color);
+  -webkit-font-smoothing: auto;
+}
+.paragraph{
+  color: rgba(255, 255, 255, 0.586);
+  font-weight: 400;
+  font-size: 0.9em;
+  font-weight: 18px;
+  font-style: bold;
+}
+
 
 .button {
   background-color: var(--base-color);
@@ -58,25 +79,53 @@ body {
 .button:hover {
   background: var(--base-color-alt);
 }
-
-.divider-1 {
-  height: 1px;
+.divider-0{
+  height: 0.0625rem;
   background: linear-gradient(
-    270deg,
-    hsla(var(--hue), 36%, 57%, 1),
-    hsla(var(--hue), 65%, 88%, 0.34)
+    300deg,
+    rgb(0, 0, 0),
+    hsla(0, 0%, 0%, 0.34)
+    
   );
+ 
+
+}
+.divider-1 {
+  height: 0.0625rem;
+  background: linear-gradient(
+    300deg,
+   hsla(5, 35%, 93%, 0.34),
+    hsla(100, 36%, 57%, 1)
+   
+  );
+  margin-bottom: 1.25rem;
+
 }
 
 .divider-2 {
-  height: 1px;
+  height: 0.0625rem;
   background: linear-gradient(
     270deg,
-    hsla(var(--hue), 65%, 88%, 0.34),
-    hsla(var(--hue), 36%, 57%, 1)
+    hsla(100, 36%, 57%, 1),
+    hsla(5, 48%, 95%, 0.34)
   );
+  margin-bottom: 1.25rem;
+}
+.divider-left{
+  width: 2rem;
+  height: 2px;
+  background: var(--gren-color01);
+  border-radius: 4rem;
 }
 
+.divider-right{
+  width: 2rem;
+  height: 2px;
+  background: var(--gren-color01);
+  border-radius: 4rem;
+  margin: 0;
+  padding: 0;
+}
 /*====  LAYOUT ============================ */
 .container {
   margin-left: 1.5rem;
@@ -113,7 +162,7 @@ body {
   margin-bottom: 2rem;
   display: flex;
 
-  position: fixed;
+
   top: 0;
   left: 0;
   z-index: 100;
@@ -174,6 +223,7 @@ nav ul li a.active::after {
 }
 
 nav .menu {
+  z-index: 2;
   opacity: 0;
   visibility: hidden;
   top: -20rem;
@@ -212,6 +262,7 @@ nav.show ul.grid {
 
 /* toggle menu */
 .toggle {
+  z-index: 3;
   color: var(--gren-color01);
   font-size: 1.5rem;
   cursor: pointer;
@@ -227,11 +278,14 @@ nav .icon-close {
 
   transition: 0.2s;
 }
+nav.show div.icon-menu{
+  display: none;
+}
 
 nav.show div.icon-close {
   visibility: visible;
   opacity: 1;
-  top: 1.5rem;
+  top: 3.300rem;
 }
 
 /*====  HOME ============================ */
@@ -242,6 +296,58 @@ nav img{
 .modal1{
   margin-top: 10.4375rem;
 }
+
+/* HISTORIA */
+.historia{
+  margin-top: 100px;
+}
+.story{
+  display: flex;
+  justify-content: space-around;
+
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  margin-bottom: 2.8125rem;
+}
+
+.story  h1{
+position: absolute;
+top: -10px;
+color: rgba(255, 255, 255, 0.519);
+
+}
+.historia ul li{
+  margin-bottom: 6.25rem;
+}
+
+.historia .circle img{
+width: 2.5rem;
+height: 2.5rem;
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 1rem;
+
+  
+}
+.historia .visao img{
+  width: 3rem;
+  height: 3rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  
+    
+  }
+.historia ul li h2 {
+text-align: center;
+margin-bottom: 1rem;
+  
+}
+
 
 
 
