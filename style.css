@@ -570,8 +570,9 @@ main {
 }
 
 
-
-
+.modal1 .swiper-slide-active{
+  width: 100rem;
+}
 
 
 }
