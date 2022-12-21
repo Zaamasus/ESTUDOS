@@ -50,6 +50,13 @@ body {
   -webkit-font-smoothing: auto;
 }
 
+.text-g{
+  color: white;
+margin: 20px auto;
+text-align: center;
+
+}
+
 .sub-title{
   font: 700 var(--title-font-size) var(--title-font);
   color: var(--title-color);
@@ -370,6 +377,17 @@ display: block;
 }
 
 
+.imagens{
+  display: block;
+  margin-top: 6.25rem;
+}
+
+
+.swiper-wrapper .swiper-slide img{
+border-radius: 0.375rem;
+width: 100%;
+
+}
 
 
 @media (min-width: 1200px) {
