@@ -51,6 +51,7 @@ body {
 }
 
 .text-g{
+  font-family: var(--title-font);
   color: white;
 margin: 20px auto;
 text-align: center;
@@ -385,9 +386,61 @@ display: block;
 
 .swiper-wrapper .swiper-slide img{
 border-radius: 0.375rem;
-width: 100%;
+width: 355px;
+height: 370px;
 
 }
+
+
+
+/*====  FOOTER ============================ */
+footer {
+  background: black;
+}
+
+footer.section {
+  padding: 4rem 0;
+}
+
+footer .logo {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+footer .brand p {
+  color:white;
+  margin-bottom: 0.75rem;
+}
+
+footer .brand a{
+  font-family: var(--title-font);
+  color: var(--gren-color01);
+}
+
+footer .brand  a span{
+  font-family: var(--title-font);
+  color:white;
+  font-size: 1rem;
+}
+footer i {
+  font-size: 1.5rem;
+  color: var(--gren-color01);
+}
+
+footer .social {
+  grid-auto-flow: column;
+  width: fit-content;
+}
+
+footer .social a {
+  transition: 0.3s;
+  display: inline-block;
+}
+
+footer .social a:hover {
+  transform: translateY(-8px);
+}
+
 
 
 @media (min-width: 1200px) {
