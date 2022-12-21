@@ -55,7 +55,7 @@ body {
   color: white;
 margin: 20px auto;
 text-align: center;
-
+font-size: 1rem;;
 }
 
 .sub-title{
@@ -391,7 +391,19 @@ height: 370px;
 
 }
 
+.services h1{
 
+  font-family : var(--title-font);
+font-size: 1.5rem;
+color: white;
+margin: 20px auto;
+text-align: center;
+}
+
+
+.services{
+  margin-bottom: 100px;
+}
 
 /*====  FOOTER ============================ */
 footer {
