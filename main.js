@@ -73,10 +73,9 @@ scrollReveal.reveal(
   #services h1, #services p,
   #videos h1, #videos .swiper,
 
-  #imgs h1, #imgs img,
+  #imgs h1, 
   
-  #testimonials header, #testimonials .testimonials
-  #contact .text, #contact .links,
+ 
   footer .brand, footer .social
   `,
   { interval: 100 }
