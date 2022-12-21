@@ -49,3 +49,35 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
   },
 });
+
+
+/* ScrollReveal: Mostrar elementos quando der scroll na página */
+const scrollReveal = ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 700,
+  reset: true
+})
+
+scrollReveal.reveal(
+  `#home .image, #home .swiper,
+  .swiper-wrapper .swiper-wrapper,
+
+  
+  #about .image, #about .paragraph,
+  #about .story h1, #about .div,
+  #uls li, #uls h2,
+
+  
+
+  #services h1, #services p,
+  #videos h1, #videos .swiper,
+
+  #imgs h1, #imgs img,
+  
+  #testimonials header, #testimonials .testimonials
+  #contact .text, #contact .links,
+  footer .brand, footer .social
+  `,
+  { interval: 100 }
+)
