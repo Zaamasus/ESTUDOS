@@ -120,6 +120,8 @@ font-size: 1rem;;
   margin-bottom: 1.25rem;
 }
 .divider-left{
+  position: relative;
+  left: -5px;
   width: 2rem;
   height: 2px;
   background: var(--gren-color01);
@@ -127,6 +129,8 @@ font-size: 1rem;;
 }
 
 .divider-right{
+  position: relative;
+  right: -5px;
   width: 2rem;
   height: 2px;
   background: var(--gren-color01);
@@ -402,7 +406,8 @@ text-align: center;
 
 
 .services{
-  margin-bottom: 100px;
+  margin-top: 6.25rem;
+  margin-bottom: 6.25rem;
 }
 
 /*====  FOOTER ============================ */
@@ -426,12 +431,12 @@ footer .brand p {
 
 footer .brand a{
   font-family: var(--title-font);
-  color: var(--gren-color01);
+  color:white;
 }
 
 footer .brand  a span{
   font-family: var(--title-font);
-  color:white;
+  color: var(--gren-color01);
   font-size: 1rem;
 }
 footer i {
@@ -480,7 +485,8 @@ footer .social a:hover {
 
 
 .modal1{
-  margin-top: 10.4375rem;
+  margin-bottom: calc( 10.4375rem + 6.25rem);
+  margin-bottom: 6.25rem;
 }
 
 
