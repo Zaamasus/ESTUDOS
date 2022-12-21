@@ -349,8 +349,25 @@ margin-bottom: 1rem;
 }
 
 
+/* GALERIA */
 
+.galeria{
+  margin-bottom: 6.25rem;
+}
 
+.modal2{
+display: block;
+    width: 600px;
+    height: 300px;
+
+  margin-bottom: 6.25rem;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+ .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom, .swiper-pagination-fraction{
+  bottom: 10px;
+}
 
 
 
